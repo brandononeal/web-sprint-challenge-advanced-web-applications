@@ -2,8 +2,8 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import BubblePage from "./BubblePage";
 
-import { fetchBubbles as mockFetchBubbles } from "../api/fetchBubbles";
-jest.mock("../api/fetchBubbles");
+import { fetchBubbles as mockFetchBubbles } from "../utils/fetchBubbles";
+jest.mock("../utils/fetchBubbles");
 
 const newBubbles = [
   { code: { hex: "#f0f8ff" }, color: "aliceblue", id: 1 },
